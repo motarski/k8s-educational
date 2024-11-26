@@ -17,7 +17,7 @@ spec:
         tier: mysql
     spec:
       containers:
-        - image: mysql:5.6
+        - image: mysql:8.0
           name: mysql
           env:
             - name: MYSQL_ROOT_PASSWORD
@@ -56,7 +56,7 @@ spec:
         tier: frontend
     spec:
       containers:
-        - image: wordpress:4.8-apache
+        - image: wordpress:6.7.1-php8.1-apache
           name: wordpress
           env:
             - name: WORDPRESS_DB_HOST
